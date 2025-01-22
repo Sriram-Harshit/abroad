@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Study from "./components/Study";
 import NotFoundPage from "./components/NotFoundPage";
@@ -15,6 +16,7 @@ const App = () => {
         {/* Use element to render the 404 page */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

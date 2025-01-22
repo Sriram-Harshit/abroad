@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 25px;
   gap: 30px;
   background-color: #ffffff; /* Background color */
   width: 30%; /* Use 100% width to avoid overlap */
@@ -30,9 +30,10 @@
   margin: 60px 0px 30px 130px;
 }
 .fields-container {
-  height: 75vh !important;
+  height: 80vh !important;
   display: flex;
   justify-content: space-around;
+  padding-top: 50px;
 }
 
 .field-1 {

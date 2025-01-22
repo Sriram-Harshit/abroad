@@ -1,7 +1,7 @@
 import "./Navbar.css";
 const Navbar = () => {
   return (
-    <header>
+    <header className="header-fixer">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">

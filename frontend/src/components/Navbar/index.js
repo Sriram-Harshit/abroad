@@ -1,22 +1,25 @@
+import "./Navbar.css";
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          ABROAD-PLAN
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/">
-              Home
-            </a>
-            <a class="nav-link disabled" aria-disabled="true">
-              About Us
-            </a>
+    <header>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/">
+            ABROAD-PLAN
+          </a>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <a className="nav-link active" aria-current="page" href="/">
+                Home
+              </a>
+              <a className="nav-link disabled" aria-disabled="true">
+                About Us
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

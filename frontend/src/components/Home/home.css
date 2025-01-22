@@ -1,51 +1,170 @@
-body {
+.field-anchors {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Ensure the color matches the surrounding theme */
 }
-
-.container {
-  max-width: 800px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-left: 20px;
-  padding: 0;
+.image-fields {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 50vh;
+}
+.respresent-image {
+  margin: auto;
+  height: 55vh;
+  width: 44vw;
+  background-size: cover;
+  border-radius: 25px;
 }
 
-.container h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+/* Updated .fields styling */
+.fields {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+  background-color: #ffffff; /* Background color */
+  width: 30%; /* Use 100% width to avoid overlap */
+  max-width: 1200px; /* Optional: Limit the width */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for visuals */
+  margin: 60px 0px 30px 130px;
+}
+.fields-container {
+  height: 75vh !important;
+  display: flex;
+  justify-content: space-around;
+}
+
+.field-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.field {
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 120px;
+  width: 120px;
+  box-sizing: border-box; /* Include padding in the width and height */
+}
+
+.field:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.field img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.field h1 {
+  font-size: 14px;
   color: #333;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.detailed-section {
+  padding: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  text-align: left;
+}
+
+.section-name {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.detailed-section-grid {
+  display: flex;
+  justify-content: space-around;
   gap: 20px;
 }
 
-.grid-item {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.item-images {
+  height: 70px;
+}
+
+.item-name {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.item-price {
+  margin-top: -15px;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.detailed-section-item {
   text-align: center;
-  transition: transform 0.2s;
+  border: 2px solid #ddd; /* Add border to each card */
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  width: 50rem;
 }
 
-.grid-item:hover {
-  transform: scale(1.05);
+.detailed-section-item:hover {
+  border-color: #007bff; /* Change border color on hover */
 }
 
-.grid-item img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
+.arrow-button {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-60%);
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 1; /* Ensure arrows are visible by default */
+  transition: opacity 0.3s ease; /* Smooth transition for hiding arrows */
 }
 
-.grid-item p {
-  font-size: 14px;
-  margin: 0;
-  color: #555;
+.arrow-button.hidden {
+  opacity: 0; /* Hide arrows when they are not needed */
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+/* Ad container remains unchanged */
+.ad-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.ad-banner {
+  width: 100%;
+  max-width: 728px;
+  height: auto;
+  margin: 20px;
 }

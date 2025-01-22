@@ -1,4 +1,3 @@
-// 404Page.js
 import React from "react";
 
 const NotFoundPage = () => {
